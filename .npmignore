@@ -1,0 +1,10 @@
+.npmignore
+.editorconfig
+.jshintrc
+.gitattributes
+test
+index.html
+converted/postal-codes-simple.json
+converted/postal-codes.json
+converted/postal-codes.csv
+converted/postal-codes.tsv
