@@ -7,10 +7,15 @@ var request = require('request');
 var iconv = require('iconv-lite');
 
 var POSTAL_CODE_URL = 'http://www.bring.no/hele-bring/forside/_attachment/159761';
+var OUTPUT_DIR = 'converted';
 var input = process.argv[2];
 
+
+function write(filename, data) {
+	fs.writeFileSync(path.join(OUTPUT_DIR, filename), data, 'utf8');
+}
+
 function convert(data) {
-	var dir = 'converted';
 	var ret = {};
 	var ret2 = {};
 	var csv = iconv.decode(data, 'latin1').trim();
@@ -21,11 +26,11 @@ function convert(data) {
 		ret2[columns[0]] = columns[1];
 	});
 
-	fs.writeFileSync(path.join(dir, 'postal-codes.tsv'), csv.replace(/\r\n/g, '\n'), 'utf8');
-	fs.writeFileSync(path.join(dir, 'postal-codes.csv'), csv.replace(/\r\n/g, '\n').replace(/\t/g, ','), 'utf8');
-	fs.writeFileSync(path.join(dir, 'postal-codes.json'), JSON.stringify(ret), 'utf8');
-	fs.writeFileSync(path.join(dir, 'postal-codes-simple.json'), JSON.stringify(ret2), 'utf8');
-	fs.writeFileSync(path.join(dir, 'postal-codes-simple.js'), 'module.exports=' + JSON.stringify(ret2), 'utf8');
+	write('postal-codes.tsv', csv.replace(/\r\n/g, '\n'));
+	write('postal-codes.csv', csv.replace(/\r\n/g, '\n').replace(/\t/g, ','));
+	write('postal-codes.json', JSON.stringify(ret));
+	write('postal-codes-simple.json', JSON.stringify(ret2));
+	write('postal-codes-simple.js', 'module.exports=' + JSON.stringify(ret2));
 }
 
 if (input) {
