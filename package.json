@@ -1,35 +1,42 @@
 {
-	"name": "norway-postal-codes",
-	"version": "0.1.0",
-	"description": "Norway Postal Codes",
-	"keywords": ["norway", "postal", "codes", "zip"],
-	"homepage": "https://github.com/sindresorhus/norway-postal-codes",
-	"bugs": "https://github.com/sindresorhus/norway-postal-codes/issues",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "http://sindresorhus.com"
-	},
-	"main": "converted/postal-codes-simple.js",
-	"bin": "convert.js",
-	"repository": {
-		"type": "git",
-		"url": "git://github.com/sindresorhus/norway-postal-codes.git"
-	},
-	"scripts": {
-		"test": "node node_modules/mocha/bin/mocha test/test-*.js"
-	},
-	"dependencies": {
-		"iconv-lite": "~0.2.5",
-		"request": "~2.11.4"
-	},
-	"devDependencies": {
-		"mocha": "~1.6.0"
-	},
-	"engines": {
-		"node": ">=0.8.0"
-	},
-	"licenses": [{
-		"type": "MIT"
-	}]
+  "name": "norway-postal-codes",
+  "version": "0.1.0",
+  "description": "Norway Postal Codes",
+  "keywords": [
+    "norway",
+    "postal",
+    "codes",
+    "zip"
+  ],
+  "homepage": "https://github.com/sindresorhus/norway-postal-codes",
+  "bugs": "https://github.com/sindresorhus/norway-postal-codes/issues",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "http://sindresorhus.com"
+  },
+  "main": "converted/postal-codes-simple.js",
+  "bin": "convert.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sindresorhus/norway-postal-codes.git"
+  },
+  "scripts": {
+    "test": "node node_modules/mocha/bin/mocha test/test-*.js"
+  },
+  "dependencies": {
+    "iconv-lite": "~0.2.7",
+    "request": "~2.11.4"
+  },
+  "devDependencies": {
+    "mocha": "~1.7.4"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "licenses": [
+    {
+      "type": "MIT"
+    }
+  ]
 }
