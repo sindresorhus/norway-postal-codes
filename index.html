@@ -6,9 +6,6 @@
 		<meta name="author" content="Sindre Sorhus">
 		<meta name="viewport" content="width=device-width">
 		<title>Norway Postal Code demo</title>
-		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 		<style>
 		html,
 		body {
@@ -25,7 +22,6 @@
 		h1 {
 			text-align: center;
 			color: #222;
-			text-shadow: 1px 1px 1px #ddd;
 			margin-bottom: 30px;
 			font-size: 30px;
 		}
@@ -88,21 +84,21 @@
 			</header>
 			<fieldset>
 				<label>Postal Code</label>
-				<input id="postalcode" maxlength="4" pattern="\d{4}" autofocus>
+				<input id="postalcode" maxlength="4" pattern="\d{4}" placeholder="2625" autofocus>
 				<label>City</label>
 				<input id="city">
 			</fieldset>
 		</div>
 	</body>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script>
-	$(function() {
+	$(function () {
 		function capitalize(str) {
 			return str && str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
 		}
 
 		$.getJSON('converted/postal-codes-simple.json', function(postalCodes) {
-			$('#postalcode').keyup(function() {
+			$('#postalcode').keyup(function () {
 				var val = $(this).val();
 				$('#city').val(val.length === 4 ? capitalize(postalCodes[val]) : '');
 			});
