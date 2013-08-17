@@ -6,7 +6,8 @@
     "norway",
     "postal",
     "codes",
-    "zip"
+    "zip",
+    "postnummer"
   ],
   "homepage": "https://github.com/sindresorhus/norway-postal-codes",
   "bugs": "https://github.com/sindresorhus/norway-postal-codes/issues",
@@ -15,7 +16,7 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
-  "main": "converted/postal-codes-simple.js",
+  "main": "converted/postal-codes-simple",
   "bin": "convert.js",
   "repository": {
     "type": "git",
@@ -38,5 +39,9 @@
     {
       "type": "MIT"
     }
+  ],
+  "files": [
+    "convert.js",
+    "converted/postal-codes-simple.js"
   ]
 }
