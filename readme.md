@@ -1,6 +1,8 @@
 # Norway Postal Codes [![Build Status](https://secure.travis-ci.org/sindresorhus/norway-postal-codes.png?branch=gh-pages)](http://travis-ci.org/sindresorhus/norway-postal-codes)
 
-Various utf8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/144754/postnummertabeller)
+Various utf8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/144754/postnummertabeller).
+
+> Norwegian: Postnummerregisteret inneholder alle postnummer i Norge som brukes til adressering av post.
 
 
 ## Downloads
@@ -13,7 +15,7 @@ Various utf8 alternative formats to the default ansi tab-delimited postal code r
 - [postal-codes.csv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
-*Last updated 2013-03-13*
+*Last updated 2013-06-06*
 
 
 ## Demo
@@ -22,7 +24,7 @@ See the [demo](http://sindresorhus.com/norway-postal-codes) for an example on ho
 Which is a really good UX feature you should make use of.
 
 
-## Getting Started
+## Getting started
 
 Even though all converted files are provided here, you might want to do it yourself.
 
