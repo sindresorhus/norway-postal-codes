@@ -41,7 +41,6 @@
     }
   ],
   "files": [
-    "convert.js",
     "converted/postal-codes-simple.js"
   ]
 }
