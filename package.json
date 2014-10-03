@@ -9,8 +9,6 @@
     "zip",
     "postnummer"
   ],
-  "homepage": "https://github.com/sindresorhus/norway-postal-codes",
-  "bugs": "https://github.com/sindresorhus/norway-postal-codes/issues",
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
@@ -18,28 +16,21 @@
   },
   "main": "converted/postal-codes-simple",
   "bin": "convert.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/sindresorhus/norway-postal-codes.git"
-  },
+  "repository": "sindresorhus/norway-postal-codes",
   "scripts": {
     "test": "mocha"
   },
   "dependencies": {
-    "iconv-lite": "~0.2.7",
-    "request": "~2.27.0"
+    "iconv-lite": "^0.4.4",
+    "request": "^2.44.0"
   },
   "devDependencies": {
-    "mocha": "~1.12.0"
+    "mocha": "*"
   },
   "engines": {
-    "node": ">=0.8.0"
+    "node": ">=0.10.0"
   },
-  "licenses": [
-    {
-      "type": "MIT"
-    }
-  ],
+  "license": "MIT",
   "files": [
     "converted/postal-codes-simple.js"
   ]
