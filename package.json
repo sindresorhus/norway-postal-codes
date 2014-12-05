@@ -14,7 +14,7 @@
     "email": "sindresorhus@gmail.com",
     "url": "http://sindresorhus.com"
   },
-  "main": "converted/postal-codes-simple",
+  "main": "converted/postal-codes-simple.js",
   "bin": "convert.js",
   "repository": "sindresorhus/norway-postal-codes",
   "scripts": {
@@ -32,6 +32,7 @@
   },
   "license": "MIT",
   "files": [
+    "convert.js",
     "converted/postal-codes-simple.js"
   ]
 }
