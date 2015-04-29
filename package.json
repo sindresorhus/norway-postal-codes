@@ -12,17 +12,18 @@
   "author": {
     "name": "Sindre Sorhus",
     "email": "sindresorhus@gmail.com",
-    "url": "http://sindresorhus.com"
+    "url": "sindresorhus.com"
   },
   "main": "converted/postal-codes-simple.js",
   "bin": "convert.js",
   "repository": "sindresorhus/norway-postal-codes",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "generate": "./convert.js"
   },
   "dependencies": {
-    "iconv-lite": "^0.4.4",
-    "request": "^2.44.0"
+    "got": "^2.9.2",
+    "iconv-lite": "^0.4.4"
   },
   "devDependencies": {
     "mocha": "*"

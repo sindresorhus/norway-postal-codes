@@ -1,9 +1,8 @@
 #!/usr/bin/env node
 'use strict';
-
 var fs = require('fs');
 var path = require('path');
-var request = require('request');
+var got = require('got');
 var iconv = require('iconv-lite');
 
 var POSTAL_CODE_URL = 'http://www.bring.no/hele-bring/forside/_attachment/159761';
@@ -20,7 +19,7 @@ function convert(data) {
 	var ret2 = {};
 	var csv = iconv.decode(data, 'latin1').trim();
 
-	csv.split('\r\n').forEach(function(row) {
+	csv.split('\r\n').forEach(function (row) {
 		var columns = row.split('\t');
 		ret[columns[0]] = columns.slice(1);
 		ret2[columns[0]] = columns[1];
@@ -36,10 +35,11 @@ function convert(data) {
 if (input) {
 	convert(fs.readFileSync(input));
 } else {
-	request(POSTAL_CODE_URL, {encoding: null}, function(err, res, body) {
-		if (err || res.statusCode !== 200) {
-			return console.log(err);
+	got(POSTAL_CODE_URL, {encoding: null}, function (err, data) {
+		if (err) {
+			throw err;
 		}
-		convert(body);
+
+		convert(data);
 	});
 }
