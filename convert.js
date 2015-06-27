@@ -5,10 +5,9 @@ var path = require('path');
 var got = require('got');
 var iconv = require('iconv-lite');
 
-var POSTAL_CODE_URL = 'http://www.bring.no/hele-bring/forside/_attachment/159761';
+var POSTAL_CODE_URL = 'http://www.bring.no/hele-bring/produkter-og-tjenester/brev-og-postreklame/andre-tjenester/_attachment/159761?download=true';
 var OUTPUT_DIR = 'converted';
 var input = process.argv[2];
-
 
 function write(filename, data) {
 	fs.writeFileSync(path.join(OUTPUT_DIR, filename), data, 'utf8');
