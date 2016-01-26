@@ -1,8 +1,7 @@
-/*global describe, it */
+/* global describe, it */
 'use strict';
 var assert = require('assert');
 var postalCodes = require('./converted/postal-codes-simple');
-
 
 describe('norway-postal-codes', function () {
 	it('should return an object with all postal codes', function () {

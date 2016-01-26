@@ -7,10 +7,10 @@ Various utf8 alternative formats to the default ansi tab-delimited postal code r
 
 ## Downloads
 
-- [postal-codes-simple.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)  
-  *Object with postal code as key and city as value.  
+- [postal-codes-simple.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)<br>
+  *Object with postal code as key and city as value.<br>
   Useful in forms to auto-complete city, see demo.*
-- [postal-codes.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)  
+- [postal-codes.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)<br>
   *Object with postal code as key and the rest as value.*
 - [postal-codes.csv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
@@ -20,7 +20,7 @@ Various utf8 alternative formats to the default ansi tab-delimited postal code r
 
 ## Demo
 
-See the [demo](http://sindresorhus.com/norway-postal-codes) for an example on how to auto-complete city from postal code.  
+See the [demo](https://sindresorhus.com/norway-postal-codes) for an example on how to auto-complete city from postal code.<br>
 Which is a really good UX feature you should make use of.
 
 
@@ -35,7 +35,7 @@ Run `./convert.js` to fetch and convert the latest registry, or you can supply a
 You can also use it as a Node module. Just install it `npm install --save norway-postal-codes` and then require it in your code:
 
 ```js
-var postalCodes = require('norway-postal-codes');
+const postalCodes = require('norway-postal-codes');
 console.log(postalCodes['1613']);
 // FREDRIKSTAD
 ```

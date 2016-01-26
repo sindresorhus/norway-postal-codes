@@ -18,7 +18,7 @@
   "bin": "convert.js",
   "repository": "sindresorhus/norway-postal-codes",
   "scripts": {
-    "test": "mocha",
+    "test": "xo && mocha",
     "generate": "./convert.js"
   },
   "dependencies": {
@@ -26,7 +26,8 @@
     "iconv-lite": "^0.4.4"
   },
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
+    "xo": "*"
   },
   "engines": {
     "node": ">=0.10.0"
@@ -35,5 +36,10 @@
   "files": [
     "convert.js",
     "converted/postal-codes-simple.js"
-  ]
+  ],
+  "xo": {
+    "ignores": [
+      "converted/**"
+    ]
+  }
 }
