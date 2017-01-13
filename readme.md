@@ -1,6 +1,6 @@
 # Norway Postal Codes [![Build Status](https://travis-ci.org/sindresorhus/norway-postal-codes.svg?branch=gh-pages)](https://travis-ci.org/sindresorhus/norway-postal-codes)
 
-Various utf8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/radgivning/sende-noe/adressetjenester/adresseregistre).
+Various UTF8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/radgivning/sende-noe/adressetjenester/adresseregistre).
 
 > Norwegian: Postnummerregisteret inneholder alle postnummer i Norge som brukes til adressering av post.
 
@@ -15,7 +15,7 @@ Various utf8 alternative formats to the default ansi tab-delimited postal code r
 - [postal-codes.csv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
-*Last updated 2015-10-19*
+*Last updated 2017-01-01*
 
 
 ## Demo
@@ -28,9 +28,9 @@ Which is a really good UX feature you should make use of.
 
 Even though all converted files are provided here, you might want to do it yourself.
 
-You'll need [Node.js](http://nodejs.org), then `cd` into this folder and `npm install`.
+You'll need [Node.js](https://nodejs.org), then `cd` into this folder and `npm install`.
 
-Run `./convert.js` to fetch and convert the latest registry, or you can supply a file path `./convert.js postnummerregister_ansi.txt` to convert a local file (make sure it's the ANSI version).
+Run `npm run make` to fetch and convert the latest registry, or you can supply a file path `npm run make postnummerregister_ansi.txt` to convert a local file (make sure it's the ANSI version).
 
 You can also use it as a Node module. Just install it `npm install --save norway-postal-codes` and then require it in your code:
 

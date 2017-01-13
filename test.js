@@ -1,14 +1,10 @@
-/* global describe, it */
-'use strict';
-var assert = require('assert');
-var postalCodes = require('./converted/postal-codes-simple');
+import test from 'ava';
+import m from './converted/postal-codes-simple';
 
-describe('norway-postal-codes', function () {
-	it('should return an object with all postal codes', function () {
-		assert.strictEqual('FREDRIKSTAD', postalCodes['1613']);
-	});
+test('returns an object with all postal codes', t => {
+	t.is('FREDRIKSTAD', m['1613']);
+});
 
-	it('should contain at least 100 items', function () {
-		assert.strictEqual(true, Object.keys(postalCodes).length > 100);
-	});
+test('contains at least 100 items', t => {
+	t.true(Object.keys(m).length > 100);
 });
