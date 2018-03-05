@@ -1,45 +1,45 @@
 {
-  "name": "norway-postal-codes",
-  "version": "2.0.0",
-  "description": "Norway Postal Codes",
-  "license": "MIT",
-  "repository": "sindresorhus/norway-postal-codes",
-  "author": {
-    "name": "Sindre Sorhus",
-    "email": "sindresorhus@gmail.com",
-    "url": "sindresorhus.com"
-  },
-  "main": "converted/postal-codes-simple.js",
-  "bin": "make.js",
-  "engines": {
-    "node": ">=4"
-  },
-  "scripts": {
-    "test": "xo && ava",
-    "make": "./make.js"
-  },
-  "files": [
-    "make.js",
-    "converted/postal-codes-simple.js"
-  ],
-  "keywords": [
-    "norway",
-    "postal",
-    "codes",
-    "zip",
-    "postnummer"
-  ],
-  "dependencies": {
-    "got": "^6.7.1",
-    "iconv-lite": "^0.4.4"
-  },
-  "devDependencies": {
-    "ava": "*",
-    "xo": "*"
-  },
-  "xo": {
-    "ignores": [
-      "converted/**"
-    ]
-  }
+	"name": "norway-postal-codes",
+	"version": "2.0.0",
+	"description": "Norway Postal Codes",
+	"license": "MIT",
+	"repository": "sindresorhus/norway-postal-codes",
+	"author": {
+		"name": "Sindre Sorhus",
+		"email": "sindresorhus@gmail.com",
+		"url": "sindresorhus.com"
+	},
+	"main": "converted/postal-codes-simple.js",
+	"bin": "make.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"scripts": {
+		"test": "xo && ava",
+		"make": "./make.js"
+	},
+	"files": [
+		"make.js",
+		"converted/postal-codes-simple.js"
+	],
+	"keywords": [
+		"norway",
+		"postal",
+		"codes",
+		"zip",
+		"postnummer"
+	],
+	"dependencies": {
+		"got": "^8.2.0",
+		"iconv-lite": "^0.4.4"
+	},
+	"devDependencies": {
+		"ava": "*",
+		"xo": "*"
+	},
+	"xo": {
+		"ignores": [
+			"converted/**"
+		]
+	}
 }

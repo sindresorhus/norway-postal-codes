@@ -32,7 +32,7 @@ You'll need [Node.js](https://nodejs.org), then `cd` into this folder and `npm i
 
 Run `npm run make` to fetch and convert the latest registry, or you can supply a file path `npm run make postnummerregister_ansi.txt` to convert a local file (make sure it's the ANSI version).
 
-You can also use it as a Node module. Just install it `npm install --save norway-postal-codes` and then require it in your code:
+You can also use it as a Node module. Just install it `npm install norway-postal-codes` and then require it in your code:
 
 ```js
 const postalCodes = require('norway-postal-codes');
