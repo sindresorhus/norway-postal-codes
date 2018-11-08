@@ -15,7 +15,7 @@ Various UTF8 alternative formats to the default ansi tab-delimited postal code r
 - [postal-codes.csv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
-*Last updated 2018-03-05*
+*Last updated 2018-11-08*
 
 
 ## Demo
