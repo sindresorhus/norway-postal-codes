@@ -36,6 +36,7 @@ You can also use it as a Node module. Just install it `npm install norway-postal
 
 ```js
 const postalCodes = require('norway-postal-codes');
+
 console.log(postalCodes['1613']);
 // FREDRIKSTAD
 ```

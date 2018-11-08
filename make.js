@@ -34,5 +34,8 @@ function convert(data) {
 if (input) {
 	convert(fs.readFileSync(input));
 } else {
-	got(POSTAL_CODE_URL, {encoding: 'buffer'}).then(data => convert(data.body)).catch(console.error);
+	(async () => {
+		const {body} = await got(POSTAL_CODE_URL, {encoding: 'buffer'});
+		convert(body);
+	})().catch(console.error);
 }
