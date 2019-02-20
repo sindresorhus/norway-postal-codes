@@ -7,13 +7,13 @@ Various UTF8 alternative formats to the default ansi tab-delimited postal code r
 
 ## Downloads
 
-- [postal-codes-simple.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)<br>
+- [postal-codes-simple.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)<br>
   *Object with postal code as key and city as value.<br>
   Useful in forms to auto-complete city, see demo.*
-- [postal-codes.json](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)<br>
+- [postal-codes.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)<br>
   *Object with postal code as key and the rest as value.*
-- [postal-codes.csv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
-- [postal-codes.tsv](https://raw.github.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
+- [postal-codes.csv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
+- [postal-codes.tsv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
 *Last updated 2018-11-08*
 
