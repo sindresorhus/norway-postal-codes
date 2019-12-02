@@ -10,7 +10,7 @@ const OUTPUT_DIR = 'converted';
 const input = process.argv[2];
 
 function write(filename, data) {
-	fs.writeFileSync(path.join(OUTPUT_DIR, filename), data, 'utf8');
+	fs.writeFileSync(path.join(__dirname, OUTPUT_DIR, filename), data, 'utf8');
 }
 
 function convert(data) {
