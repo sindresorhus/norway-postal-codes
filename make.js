@@ -5,12 +5,12 @@ const path = require('path');
 const got = require('got');
 const iconv = require('iconv-lite');
 
-const POSTAL_CODE_URL = 'http://www.bring.no/radgivning/sende-noe/adressetjenester/postnummer/_attachment/615728?_download=true';
+const POSTAL_CODE_URL = 'https://www.bring.no/postnummerregister-ansi.txt';
 const OUTPUT_DIR = 'converted';
 const input = process.argv[2];
 
 function write(filename, data) {
-	fs.writeFileSync(path.join(OUTPUT_DIR, filename), data, 'utf8');
+	fs.writeFileSync(path.join(__dirname, OUTPUT_DIR, filename), data, 'utf8');
 }
 
 function convert(data) {
