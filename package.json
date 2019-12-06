@@ -4,6 +4,7 @@
 	"description": "Norway Postal Codes",
 	"license": "MIT",
 	"repository": "sindresorhus/norway-postal-codes",
+	"funding": "https://github.com/sponsors/sindresorhus",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
@@ -24,18 +25,19 @@
 	],
 	"keywords": [
 		"norway",
+		"norge",
 		"postal",
 		"codes",
 		"zip",
 		"postnummer"
 	],
 	"dependencies": {
-		"got": "^9.3.1",
-		"iconv-lite": "^0.4.24"
+		"got": "^10.0.1",
+		"iconv-lite": "^0.5.0"
 	},
 	"devDependencies": {
-		"ava": "^0.25.0",
-		"xo": "^0.23.0"
+		"ava": "^2.4.0",
+		"xo": "^0.25.3"
 	},
 	"xo": {
 		"ignores": [
