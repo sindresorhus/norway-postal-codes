@@ -35,7 +35,7 @@ if (input) {
 	convert(fs.readFileSync(input));
 } else {
 	(async () => {
-		const {body} = await got(POSTAL_CODE_URL, {encoding: 'buffer'});
+		const body = await got(POSTAL_CODE_URL).buffer();
 		convert(body);
 	})().catch(console.error);
 }
