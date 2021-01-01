@@ -1,4 +1,4 @@
-# Norway Postal Codes [![Build Status](https://travis-ci.org/sindresorhus/norway-postal-codes.svg?branch=gh-pages)](https://travis-ci.org/sindresorhus/norway-postal-codes)
+# Norway Postal Codes
 
 Various UTF8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/radgivning/sende-noe/adressetjenester/adresseregistre).
 
