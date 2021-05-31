@@ -4,25 +4,22 @@ Various UTF8 alternative formats to the default ansi tab-delimited postal code r
 
 > Norwegian: Postnummerregisteret inneholder alle postnummer i Norge som brukes til adressering av post.
 
-
 ## Downloads
 
-- [postal-codes-simple.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)<br>
-  *Object with postal code as key and city as value.<br>
+- [postal-codes-simple.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes-simple.json)\
+  *Object with postal code as key and city as value.\
   Useful in forms to auto-complete city, see demo.*
-- [postal-codes.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)<br>
+- [postal-codes.json](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.json)\
   *Object with postal code as key and the rest as value.*
 - [postal-codes.csv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
-*Last updated 2019-12-06*
-
+*Last updated 2021-05-31*
 
 ## Demo
 
-See the [demo](https://sindresorhus.com/norway-postal-codes) for an example on how to auto-complete city from postal code.<br>
+See the [demo](https://sindresorhus.com/norway-postal-codes) for an example on how to auto-complete city from postal code.\
 Which is a really good UX feature you should make use of.
-
 
 ## Getting started
 
