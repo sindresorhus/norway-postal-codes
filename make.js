@@ -31,11 +31,21 @@ function convert(data) {
 	write('postal-codes-simple.js', `module.exports=${JSON.stringify(ret2)}`);
 }
 
-if (input) {
-	convert(fs.readFileSync(input));
-} else {
-	(async () => {
-		const body = await got(POSTAL_CODE_URL).buffer();
-		convert(body);
-	})().catch(console.error);
+async function make() {
+	if (input) {
+		convert(fs.readFileSync(input));
+	} else {
+		try {
+			const body = await got(POSTAL_CODE_URL).buffer();
+			convert(body);
+		} catch (error) {
+			console.error(error);
+		}
+	}
+}
+
+module.exports = make;
+
+if (require.main === module) {
+	make();
 }
