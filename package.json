@@ -8,12 +8,12 @@
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"url": "https://sindresorhus.com"
 	},
 	"main": "converted/postal-codes-simple.js",
 	"bin": "make.js",
 	"engines": {
-		"node": ">=8"
+		"node": ">=14.16"
 	},
 	"scripts": {
 		"test": "xo && ava",
@@ -32,8 +32,8 @@
 		"postnummer"
 	],
 	"dependencies": {
-		"got": "^10.0.1",
-		"iconv-lite": "^0.5.0"
+		"got": "^11.8.5",
+		"iconv-lite": "^0.6.3"
 	},
 	"devDependencies": {
 		"ava": "^2.4.0",
