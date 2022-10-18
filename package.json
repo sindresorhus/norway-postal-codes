@@ -21,7 +21,8 @@
 	},
 	"files": [
 		"make.js",
-		"converted/postal-codes-simple.js"
+		"converted/postal-codes-simple.js",
+		"index.d.ts"
 	],
 	"keywords": [
 		"norway",
@@ -39,6 +40,7 @@
 		"ava": "^2.4.0",
 		"xo": "^0.25.3"
 	},
+	"types": "index.d.ts",
 	"xo": {
 		"ignores": [
 			"converted/**"
