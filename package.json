@@ -5,6 +5,7 @@
 	"license": "MIT",
 	"repository": "sindresorhus/norway-postal-codes",
 	"funding": "https://github.com/sponsors/sindresorhus",
+	"types": "index.d.ts",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",
