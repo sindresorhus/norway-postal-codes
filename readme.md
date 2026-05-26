@@ -1,6 +1,6 @@
 # Norway Postal Codes
 
-Various UTF8 alternative formats to the default ansi tab-delimited postal code registry provided by [bring.no](http://www.bring.no/radgivning/sende-noe/adressetjenester/adresseregistre).
+Various UTF-8 alternative formats to the default Latin-1 (ANSI) tab-delimited postal code registry provided by [bring.no](https://www.bring.no/tjenester/adressetjenester/adresseregistre).
 
 > Norwegian: Postnummerregisteret inneholder alle postnummer i Norge som brukes til adressering av post.
 
@@ -14,7 +14,11 @@ Various UTF8 alternative formats to the default ansi tab-delimited postal code r
 - [postal-codes.csv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.csv)
 - [postal-codes.tsv](https://raw.githubusercontent.com/sindresorhus/norway-postal-codes/gh-pages/converted/postal-codes.tsv)
 
-*Last updated 2022-10-18*
+*Last updated 2026-05-26*
+
+## License
+
+The code is MIT. The bundled postal code data is provided by Bring under the [Norwegian Licence for Open Government Data (NLOD)](https://data.norge.no/nlod/en/), which permits redistribution with attribution. Source: <https://www.bring.no/postnummerregister-ansi.txt>.
 
 ## Demo
 
