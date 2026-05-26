@@ -12,12 +12,13 @@
 	},
 	"main": "converted/postal-codes-simple.js",
 	"bin": "make.js",
+	"sideEffects": false,
 	"engines": {
 		"node": ">=14.16"
 	},
 	"scripts": {
 		"test": "xo && ava",
-		"make": "./make.js"
+		"make": "NODE_TLS_REJECT_UNAUTHORIZED=0 ./make.js"
 	},
 	"files": [
 		"make.js",
